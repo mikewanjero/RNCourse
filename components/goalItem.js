@@ -1,7 +1,7 @@
 import React from "react";
 import { StyleSheet, View, Text, Pressable } from "react-native";
 
-function GoalItem(props) {
+export default function GoalItem(props) {
   return (
     <Pressable onPress={props.onDeleteItem.bind(this, props.id)}>
       <View style={styles.goalItem}>
@@ -11,14 +11,12 @@ function GoalItem(props) {
   );
 }
 
-export default GoalItem;
-
 const styles = StyleSheet.create({
   goalItem: {
     textAlign: "left",
     margin: 8,
     padding: 8,
-    borderRadius: 5,
+    borderRadius: 10,
     backgroundColor: "#5e0acc",
   },
   goalText: {
