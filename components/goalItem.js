@@ -5,7 +5,7 @@ export default function GoalItem(props) {
   return (
     <View style={styles.goalItem}>
       <Pressable
-        android_ripple={{ color: "#300aa4" }}
+        android_ripple={{ color: "#BD48FF" }}
         onPress={props.onDeleteItem.bind(this, props.id)}
       >
         <Text style={styles.goalText}>{props.text}</Text>
