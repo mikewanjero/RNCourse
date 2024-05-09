@@ -21,10 +21,12 @@ export default function GoalInput(props) {
     setEnteredGoalText("");
   }
 
+  console.log("GoalInput");
+
   return (
     <>
       <StatusBar style="light" />
-      <Modal visible={props.visible} animationType="slide">
+      <Modal visible={props.visible} animationType="fade">
         <View style={styles.inputContainer}>
           <Image
             source={require("../assets/images/goal.png")}
